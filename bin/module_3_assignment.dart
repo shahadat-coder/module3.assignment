@@ -6,14 +6,14 @@ class Car{
   late int year;
   late double milesDriven;
 
-  static int  numberOfCars = 3;
+  static int  numberOfCars = 0;
 
 
   //Method....
 
   void drive(double miles){
     milesDriven += miles;
-
+   numberOfCars ++;
   }
 
   double getMilesDriven() => milesDriven;
